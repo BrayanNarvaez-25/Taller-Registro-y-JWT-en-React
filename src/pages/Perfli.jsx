@@ -16,7 +16,7 @@ function Perfil() {
         const cargarPerfil = async () => {
             try {
                 const response = await fetch(`${API_BASE_url}/auth/perfil`, {
-                    method : 'GET',
+                    method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -45,7 +45,7 @@ function Perfil() {
                 }
             })
         } catch (err) {
-                console.log('Error de red al intentar revocar el token: ' + err)
+            console.log('Error de red al intentar revocar el token: ' + err)
         }
         logout();
         navigate('/login')
@@ -66,8 +66,11 @@ function Perfil() {
                     <button onClick={manejarLogOut} className="btn-terminal btn-terminal--danger" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
                         <IconLogOut width="14" height="14" /> Cerrar Sesión
                     </button>
-                    <button onClick={()=> navigate("/vehiculos")} className="btn-terminal btn-terminal--danger" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <button onClick={() => navigate("/vehiculos")} className="btn-terminal btn-terminal--danger" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
                         <IconLogOut width="14" height="14" /> Gestionar Vehiculo
+                    </button>
+                    <button onClick={() => navigate("/gestion")} className="btn-terminal" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        🎬 Gestionar Películas
                     </button>
                 </div>
 
@@ -100,7 +103,6 @@ function Perfil() {
                 )}
             </div>
         </div>
-
     )
 };
 
