@@ -66,6 +66,9 @@ function Perfil() {
                     <button onClick={manejarLogOut} className="btn-terminal btn-terminal--danger" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
                         <IconLogOut width="14" height="14" /> Cerrar Sesión
                     </button>
+                    <button onClick={()=> navigate("/vehiculos")} className="btn-terminal btn-terminal--danger" style={{ width: 'auto', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <IconLogOut width="14" height="14" /> Gestionar Vehiculo
+                    </button>
                 </div>
 
                 {error && (

@@ -53,3 +53,33 @@ export function IconCheck(props) {
         </svg>
     );
 };
+
+export function IconCar(props) {
+    return (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+            <path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13" />
+            <path d="M3 13h18v4a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-1H6.5v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4z" />
+            <circle cx="7" cy="16" r="1.2" fill="currentColor" />
+            <circle cx="17" cy="16" r="1.2" fill="currentColor" />
+        </svg>
+    );
+};
+
+export function IconImage(props) {
+    return (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+            <rect x="3.5" y="5" width="17" height="14" rx="1.5" />
+            <circle cx="8.5" cy="10" r="1.5" />
+            <path d="M4 17l5-5 3 3 3.5-3.5L20 16" />
+        </svg>
+    );
+};
+
+export function IconArrowLeft(props) {
+    return (
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+            <path d="M19 12H5" />
+            <path d="M10 6l-5 6 5 6" />
+        </svg>
+    );
+};
