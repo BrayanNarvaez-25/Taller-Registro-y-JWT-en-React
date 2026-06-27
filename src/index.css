@@ -511,3 +511,53 @@ p {
   border: 1px dashed var(--border);
   border-radius: 6px;
 }
+
+/* ── Card actions ─────────────────────────────── */
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.card-actions .btn-terminal {
+  flex: 1;
+  margin-top: 0;
+  font-size: 11px;
+  padding: 8px 6px;
+  letter-spacing: 1px;
+}
+
+/* ── Modal overlay ────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.modal-box {
+  width: 100%;
+  max-width: 420px;
+  background: var(--panel);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  padding: 26px 24px 30px;
+  box-shadow: 0 0 40px var(--green-glow), inset 0 0 30px rgba(57, 255, 106, 0.05);
+  animation: panelGlow 5s ease-in-out infinite;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions .btn-terminal {
+  flex: 1;
+  margin-top: 0;
+}
